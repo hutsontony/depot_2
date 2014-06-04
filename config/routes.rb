@@ -1,6 +1,9 @@
 Depot::Application.routes.draw do
   get "store/index"
   resources :products
+  resources :line_items # added to try to get view to work !!
+  resources :carts
+  resources :orders
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
